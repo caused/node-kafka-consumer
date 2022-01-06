@@ -43,6 +43,12 @@ $ npm run start:dev
 
 # production mode
 $ npm run start:prod
+
+# start the kafka container
+$ docker-compose up
+
+# create the topic
+$ kafka-topics --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic payment-topic
 ```
 
 ## Test
